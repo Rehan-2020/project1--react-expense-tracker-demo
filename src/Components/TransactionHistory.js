@@ -13,6 +13,7 @@ export const TransactionHistory = () => {
                 <li className="minus">
                     Project 1 Salaries
                     <span>-$500</span>
+                    <button className="delete-btn">X</button>
                 </li>
             </ul>
         </div>

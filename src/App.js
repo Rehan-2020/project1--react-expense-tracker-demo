@@ -2,6 +2,9 @@ import React from'react';
 import logo from './logo.svg';
 import './App.css';
 
+// import the Global Provider
+import { GlobalProvider } from './Context/GlobalState'
+
 // Import Components
 import { Header } from './Components/Header'
 import { Balance } from './Components/Balance'
@@ -11,7 +14,7 @@ import { AddTransaction } from './Components/AddTransaction'
 
 function App() {
   return (
-    <div>
+    <GlobalProvider>
       <Header/>
       <div className="container">
         <Balance/>
@@ -19,7 +22,7 @@ function App() {
         <TransactionHistory/>
         <AddTransaction/>
       </div>
-    </div>
+    </GlobalProvider>
   );
 }
 
